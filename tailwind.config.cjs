@@ -61,9 +61,7 @@ module.exports = {
   theme: {
     colors,
     screens: {
-      "vw-480": "480px",
       sm: "600px",
-      "vw-700": "700px",
       md: "960px",
       lg: "1264px",
       xl: "1904px",
