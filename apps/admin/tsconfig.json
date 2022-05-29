@@ -12,10 +12,8 @@
     "strict": true,
 
     "paths": {
-      "$components/*": ["src/components/*"],
-      "$store/*": ["src/store/*"],
-      "$types/*": ["src/types/*"],
-      "$utils/*": ["src/utils/*"]
+      "$lib/api": ["../../libs/api"],
+      "$lib/app": ["../../libs/app"]
     }
   }
 }
