@@ -1,18 +1,18 @@
 <script context="module" lang="ts">
-	import Header from '$components/Header.svelte';
-	import Footer from '$components/Footer.svelte';
+  import Header from "$components/Header.svelte";
+  import Footer from "$components/Footer.svelte";
 </script>
 
 <script lang="ts">
-	import '../app.css';
+  import "../app.css";
 </script>
 
 <div class="flex flex-col h-screen">
-	<Header />
+  <Header />
 
-	<div class="grow">
-		<slot />
-	</div>
+  <div class="grow">
+    <slot />
+  </div>
 
-	<Footer />
+  <Footer />
 </div>

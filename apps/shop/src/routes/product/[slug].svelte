@@ -1,14 +1,14 @@
 <script lang="ts">
-	import type { Product } from '$types/entity';
-	import { page } from '$app/stores';
+  import type { Product } from "$lib/app";
+  import { page } from "$app/stores";
 
-	export let product: Product;
+  export let product: Product;
 </script>
 
 <div class="container">
-	<div class="py-8 text-xl">
-		<a href="/">Home</a> / {$page.params.slug}
-	</div>
+  <div class="py-8 text-xl">
+    <a href="/">Home</a> / {$page.params.slug}
+  </div>
 
-	{JSON.stringify(product, null, 8)}
+  {JSON.stringify(product, null, 8)}
 </div>

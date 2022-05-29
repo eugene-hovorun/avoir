@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .scrollbar {
-	scrollbar-color: #afbbce white;
-	scrollbar-width: thin;
+  scrollbar-color: #afbbce white;
+  scrollbar-width: thin;
 }
 
 .scrollbar::-webkit-scrollbar-track-piece {
-	background-color: white;
+  background-color: white;
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
-	background-color: #afbbce;
+  background-color: #afbbce;
 }
