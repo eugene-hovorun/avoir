@@ -1,8 +1,8 @@
 ## Setup
 
 ```bash
-# yarn
-npm install
+# install dependencies
+yarn
 
 # Run shop for development
 yarn dev:shop
