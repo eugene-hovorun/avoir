@@ -12,7 +12,7 @@
     "strict": true,
 
     "paths": {
-      "$lib/api": ["../../libs/api"],
+      "$lib/back": ["../../libs/back"],
       "$lib/app": ["../../libs/app"]
     }
   }

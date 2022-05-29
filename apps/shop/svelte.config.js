@@ -2,9 +2,7 @@ import adapter from "@sveltejs/adapter-netlify";
 import preprocess from "svelte-preprocess";
 import path from "path";
 
-/** @type {import('@sveltejs/kit').Config} */
 const config = {
-  // Consult https://github.com/sveltejs/svelte-preprocess
   preprocess: preprocess({
     postcss: true,
   }),
@@ -19,7 +17,7 @@ const config = {
           $types: path.resolve("./src/types/"),
           $utils: path.resolve("./src/utils/"),
           "$lib/app": path.resolve("../../libs/app"),
-          "$lib/api": path.resolve("../../libs/api"),
+          "$lib/back": path.resolve("../../libs/back"),
         },
       },
     },

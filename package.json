@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "license": "UNLICENSED",
   "scripts": {
-    "dev:front": "cd ./apps/front && yarn dev",
+    "dev:shop": "cd ./apps/shop && yarn dev",
     "dev:admin": "cd ./apps/admin && yarn dev"
   },
   "devDependencies": {
