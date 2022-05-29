@@ -1,0 +1,30 @@
+{
+  "name": "ssr",
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "deploy": "netlify build && netlify deploy --prod"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "../../node_modules/@sveltejs/adapter-auto",
+    "@sveltejs/adapter-netlify": "../../node_modules/@sveltejs/adapter-netlify",
+    "@sveltejs/kit": "../../node_modules/@sveltejs/kit",
+    "@typescript-eslint/eslint-plugin": "../../node_modules/@typescript-eslint/eslint-plugin",
+    "@typescript-eslint/parser": "../../node_modules/@typescript-eslint/parser",
+    "autoprefixer": "../../node_modules/autoprefixer",
+    "eslint": "../../node_modules/eslint",
+    "eslint-config-prettier": "../../node_modules/eslint-config-prettier",
+    "eslint-plugin-svelte3": "../../node_modules/eslint-plugin-svelte3",
+    "postcss": "../../node_modules/postcss",
+    "prettier": "../../node_modules/prettier",
+    "prettier-plugin-svelte": "../../node_modules/prettier-plugin-svelte",
+    "svelte": "../../node_modules/svelte",
+    "svelte-check": "../../node_modules/svelte-check",
+    "svelte-preprocess": "../../node_modules/svelte-preprocess",
+    "tslib": "../../node_modules/tslib",
+    "typescript": "../../node_modules/typescript"
+  },
+  "type": "module"
+}
