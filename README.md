@@ -1,7 +1,7 @@
 ## Setup
 
 ```bash
-# install dependencies
+# Install dependencies
 yarn
 
 # Run shop for development
@@ -14,8 +14,8 @@ yarn dev:admin
 ## Structure
 
 - apps
-  - admin - admin dashboard
-  - shop - shop
+  - **admin** - admin dashboard
+  - **shop** - shop
 - libs
-  - app - reusable UI component, helpers etc.
-  - back - reusable backend stuff
+  - **app** - reusable UI component, helpers etc.
+  - **back** - reusable backend stuff
