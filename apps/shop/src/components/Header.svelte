@@ -1,3 +1,3 @@
-<div class="flex bg-dark-200 py-4">
-	<div class="container">Header</div>
+<div class="flex bg-brand py-4 text-white">
+  <div class="container">Header</div>
 </div>

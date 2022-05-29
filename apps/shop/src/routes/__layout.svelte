@@ -7,7 +7,7 @@
   import "../app.css";
 </script>
 
-<div class="flex flex-col h-screen">
+<div class="flex flex-col h-screen text-dark-800">
   <Header />
 
   <div class="grow">

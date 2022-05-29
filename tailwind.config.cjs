@@ -1,20 +1,20 @@
 const tailwindColors = require("tailwindcss/colors");
 
 const colors = {
-  brand: "#277bfa",
+  brand: "#7341fb",
   white: "#ffffff",
   transparent: "rgba(0,0,0,0)",
   primary: {
-    50: "#ecf4ff",
-    100: "#d4e5fd",
-    200: "#a9cafa",
-    300: "#7db0f9",
-    400: "#5295f7",
-    500: "#277bfa",
-    600: "#1f57d4",
-    700: "#123a8d",
-    800: "#061d47",
-    900: "#03112c",
+    50: "#e3d9fe",
+    100: "#c7b3fd",
+    200: "#9d7afc",
+    300: "#8154fb",
+    400: "#7341fb",
+    500: "#7341fb",
+    600: "#683be2",
+    700: "#5c34c9",
+    800: "#452797",
+    900: "#2e1a64",
   },
   dark: {
     50: "#f5f7fc",
@@ -45,14 +45,9 @@ const colors = {
   gray: tailwindColors.gray,
   orange: tailwindColors.orange,
   green: tailwindColors.green,
-  teal: tailwindColors.teal,
-  cyan: tailwindColors.cyan,
-  sky: tailwindColors.sky,
   blue: tailwindColors.blue,
-  indigo: tailwindColors.indigo,
   purple: tailwindColors.purple,
   pink: tailwindColors.pink,
-  rose: tailwindColors.rose,
 };
 
 module.exports = {
@@ -68,9 +63,9 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        gradient: "linear-gradient(123deg, #428CFB 6.87%, #0537DB 90.53%)",
+        gradient: "linear-gradient(123deg, #7341fb 6.87%, #5d04d2 90.53%)",
         "gradient-dark":
-          "linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(123deg, #428CFB 6.87%, #0537DB 90.53%)",
+          "linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(123deg, #7341fb 6.87%, #5d04d2 90.53%)",
       },
       letterSpacing: {
         tight: "-.0125rem",
