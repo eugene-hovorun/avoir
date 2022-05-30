@@ -10,6 +10,7 @@
 
 # IDEs and editors
 /.idea
+/.vscode
 .project
 .classpath
 .c9/
@@ -58,7 +59,6 @@ reports
 test-reports
 documentation
 .angular
-**/.aws-sam
 
 envs/**/**.prod.*
 ui-debug.log
