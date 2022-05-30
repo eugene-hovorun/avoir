@@ -20,6 +20,10 @@ const config = {
           "$lib/back": path.resolve("../../libs/back"),
         },
       },
+      optimizeDeps: {
+        include: ['pg'],
+        exclude: ['pg-native']
+      }
     },
   },
 };
