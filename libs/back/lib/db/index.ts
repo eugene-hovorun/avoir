@@ -9,5 +9,4 @@ const config: PoolConfig = {
 };
 const pool: Pool = new Pool(config);
 
-/** @type {import('@sveltejs/kit').Config} */
 export default pool;
