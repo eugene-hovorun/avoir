@@ -29,6 +29,7 @@
   },
   "type": "module",
   "dependencies": {
+    "clsx": "^1.1.1",
     "pg": "^8.7.3"
   }
 }

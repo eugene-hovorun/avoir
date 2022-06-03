@@ -4,6 +4,7 @@ const colors = {
   brand: "#7341fb",
   white: "#ffffff",
   transparent: "rgba(0,0,0,0)",
+  drawer: "#ebf0f4",
   primary: {
     50: "#e3d9fe",
     100: "#c7b3fd",
@@ -15,6 +16,13 @@ const colors = {
     700: "#5c34c9",
     800: "#452797",
     900: "#2e1a64",
+  },
+  text: {
+    50: "#737d8c",
+    100: "#5f779c",
+    200: "#3b5377",
+    300: "#1b3862",
+    400: "#141f30",
   },
   dark: {
     50: "#f5f7fc",

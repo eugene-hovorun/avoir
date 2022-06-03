@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { Product } from "$lib/app";
   import { page } from "$app/stores";
-  import ProductList from "$components/product/ProductList.svelte";
+  import { ProductList } from "$components";
 
   export let products: Product[];
 </script>

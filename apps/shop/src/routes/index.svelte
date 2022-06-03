@@ -1,5 +1,5 @@
 <script lang="ts">
-  import CategoryList from "$components/category/CategoryList.svelte";
+  import { CategoryList } from "$components";
 
   export let categories: any[] = [];
 </script>

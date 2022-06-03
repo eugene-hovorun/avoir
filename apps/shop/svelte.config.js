@@ -21,9 +21,9 @@ const config = {
         },
       },
       optimizeDeps: {
-        include: ['pg'],
-        exclude: ['pg-native']
-      }
+        include: ["pg"],
+        exclude: ["pg-native"],
+      },
     },
   },
 };
