@@ -83,6 +83,22 @@ export class ProductService {
         }
     }
 
+    public static async checkSlugAvailability(slug: string): Promise<RequestHandlerOutput<any>> {
+        try {
+            const isAvailable: boolean = await isSlugExist(slug);
+
+            return {
+                status: 200,
+                body: !isAvailable
+            }
+        } catch (err) {
+            return {
+                status: 500,
+                body: err
+            }
+        }
+    }
+
     public static async createProduct(event: RequestEvent): Promise<RequestHandlerOutput<any>> {
         const product: any = await event.request.json();
         const requiredFields: string[] = ['name', 'slug', 'image'];
