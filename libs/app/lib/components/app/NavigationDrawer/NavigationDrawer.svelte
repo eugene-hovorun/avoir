@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { createEventDispatcher } from "svelte";
   import clsx from "clsx";
   import type { AppDrawerItem } from "../../../types";
   import BaseDrawer from "../BaseDrawer.svelte";
@@ -32,6 +33,13 @@
    */
   export let drawerItems: AppDrawerItem[] = [];
 
+  /**
+   * Current pathname.
+   * type {string}
+   * @default ''
+   */
+  export let pathname: string = "";
+
   let isMinified = false;
   let toggle: () => void;
 
@@ -42,7 +50,9 @@
 
   $: isDrawerMinified = isMinified && !isTemporary;
 
+  const dispatchLogo = createEventDispatcher<{ click: void }>();
   const toggleDrawer = () => toggle();
+  const handleLogoClick = () => dispatchLogo("click");
 </script>
 
 <BaseDrawer
@@ -53,16 +63,20 @@
   bind:toggle
 >
   <slot name="prepend">
-    <DrawerLogo isMinified={isDrawerMinified} on:toggle={toggleDrawer} />
+    <DrawerLogo
+      isMinified={isDrawerMinified}
+      on:toggle={toggleDrawer}
+      on:click={handleLogoClick}
+    />
   </slot>
 
   {#each drawerItems as item, index}
     <div class={titleClasses}>{item.text}</div>
 
-    {#each item.subItems as subItem, subIndex}
+    {#each item.subItems as subItem}
       <DrawerListItem
         drawerItem={subItem}
-        active={!index && subIndex === 1}
+        active={pathname.includes(subItem.to)}
         isMinified={isDrawerMinified}
       />
     {/each}

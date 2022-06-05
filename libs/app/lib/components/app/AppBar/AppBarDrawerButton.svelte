@@ -1,5 +1,5 @@
 <script lang="ts">
-  import IconButton from "../../Icon.svelte";
+  import IconButton from "../../IconButton.svelte";
 </script>
 
-<IconButton name="menu" color="dark-600" on:click />
+<IconButton icon="menu" iconColor="dark-600" on:click />

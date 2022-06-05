@@ -1,5 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import { page } from "$app/stores";
+  import { goto } from "$app/navigation";
   import {
     NavigationDrawer,
     BaseLayout,
@@ -17,6 +19,8 @@
   const toggleNavigationDrawer = () => {
     isNavigationDrawerActive = !isNavigationDrawerActive;
   };
+
+  const goHome = () => goto("/");
 
   onMount(() => {
     useMediaQuery(breakpoint.xs).subscribe((xs) => {
@@ -39,9 +43,11 @@
   <NavigationDrawer
     slot="drawer-left"
     {drawerItems}
+    pathname={$page.url.pathname}
     isTemporary={isMobile}
     bind:isDrawerActive={isNavigationDrawerActive}
     bind:drawerOffset
+    on:click={goHome}
   />
 
   <slot />

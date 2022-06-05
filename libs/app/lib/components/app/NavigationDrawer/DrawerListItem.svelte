@@ -30,10 +30,8 @@
     }
   };
 
-  const transition = "duration-200 transition-colors";
-
   $: itemClasses = clsx({
-    "bg-text-400 text-white": active,
+    "bg-gradient text-white": active,
     "text-text-200 hover:bg-dark-100": !active,
     "relative h-12 px-4 flex items-center text-sm": true,
     rounded: !isMinified,
@@ -41,16 +39,12 @@
   });
 </script>
 
-<a
-  class="{itemClasses} {transition}"
-  href={drawerItem.to}
-  on:click={handleClick}
->
-  <span class="block mr-2 {transition}">
+<a class={itemClasses} href={drawerItem.to} on:click={handleClick}>
+  <span class="block mr-2">
     <BaseIcon name={drawerItem.icon} />
   </span>
   {#if !isMinified}
-    <span class={`font-medium truncate ${transition}`}>
+    <span class={`font-medium truncate`}>
       {drawerItem.text}
     </span>
   {/if}
