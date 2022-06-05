@@ -1,10 +1,23 @@
 <script lang="ts">
-  import type { AppDrawerItem } from "$lib/app";
-  import { Icon } from "$lib/app";
+  import type { AppDrawerItem } from "../../../types";
   import clsx from "clsx";
+  import BaseIcon from "../../Icon.svelte";
 
+  /**
+   * The app drawer item.
+   * @type {AppDrawerItem}
+   * @required
+   */
   export let drawerItem: AppDrawerItem;
+  /**
+   * If the user is on the current page of the drawer item.
+   * @default false
+   */
   export let active: boolean = false;
+  /**
+   * If the drawer is minified or not.
+   * @default false
+   */
   export let isMinified: boolean = false;
 
   const handleClick = (event: MouseEvent) => {
@@ -33,12 +46,9 @@
   href={drawerItem.to}
   on:click={handleClick}
 >
-  {#if drawerItem.icon}
-    <span class="block mr-2 {transition}">
-      <Icon name={drawerItem.icon} />
-    </span>
-  {/if}
-
+  <span class="block mr-2 {transition}">
+    <BaseIcon name={drawerItem.icon} />
+  </span>
   {#if !isMinified}
     <span class={`font-medium truncate ${transition}`}>
       {drawerItem.text}
