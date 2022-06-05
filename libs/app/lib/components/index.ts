@@ -11,5 +11,6 @@ export { default as AppTextField } from "./TextField.svelte";
 export { default as IconButton } from "./IconButton.svelte";
 export { default as Icon } from "./Icon.svelte";
 export { default as ValidationMessage } from "./ValidationMessage.svelte";
+export { default as MergingTitle } from "./MergingTitle.svelte";
 
 export * from "./app";

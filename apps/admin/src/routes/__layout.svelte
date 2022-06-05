@@ -5,11 +5,14 @@
   import {
     NavigationDrawer,
     BaseLayout,
+    AppButton,
     AppBar,
+    MergingTitle,
     useMediaQuery,
     breakpoint,
   } from "$lib/app";
   import drawerItems from "./navigation";
+  import { headerState } from "$store";
   import "../app.css";
 
   let drawerOffset = 0;
@@ -21,6 +24,7 @@
   };
 
   const goHome = () => goto("/");
+  const addCategory = () => goto("/category/create");
 
   onMount(() => {
     useMediaQuery(breakpoint.xs).subscribe((xs) => {
@@ -30,14 +34,27 @@
   });
 </script>
 
-<BaseLayout {drawerOffset}>
+<BaseLayout {drawerOffset} class="text-text-200">
   <AppBar
     slot="app-bar"
     left={drawerOffset}
     showDrawerButton={isMobile}
     on:toggleDrawer={toggleNavigationDrawer}
   >
-    <span slot="left">Page title</span>
+    <span slot="left">
+      <MergingTitle title={$headerState.pageTitle} />
+    </span>
+
+    <span slot="actions">
+      {#if $headerState.pageTitle === "Categories"}
+        <AppButton
+          label="Add category"
+          icon="plus"
+          type="secondary"
+          on:click={addCategory}
+        />
+      {/if}
+    </span>
   </AppBar>
 
   <NavigationDrawer
@@ -50,5 +67,7 @@
     on:click={goHome}
   />
 
-  <slot />
+  <div class="container">
+    <slot />
+  </div>
 </BaseLayout>

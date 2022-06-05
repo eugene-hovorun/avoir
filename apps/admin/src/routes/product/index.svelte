@@ -1,1 +1,10 @@
-<div class="py-20 text-text-100 text-xl text-center">Product</div>
+<script lang="ts">
+  import { onDestroy } from "svelte";
+  import { headerState } from "$store";
+
+  $headerState.pageTitle = "Products";
+
+  onDestroy(() => {
+    $headerState.pageTitle = "";
+  });
+</script>

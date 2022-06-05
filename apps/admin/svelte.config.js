@@ -13,6 +13,7 @@ const config = {
       resolve: {
         alias: {
           $components: path.resolve("./src/components"),
+          $store: path.resolve("./src/store/"),
           "$lib/app": path.resolve("../../libs/app"),
           "$lib/back": path.resolve("../../libs/back"),
         },

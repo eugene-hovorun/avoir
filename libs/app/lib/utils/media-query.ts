@@ -20,7 +20,7 @@ export const breakpoint: Record<Breakpoint, string> = {
 };
 
 export const useMediaQuery = (mediaQuery: string) => {
-  return readable(null, (set) => {
+  return readable(true, (set) => {
     const media: MediaQueryList = window.matchMedia(mediaQuery);
 
     set(media.matches);

@@ -13,6 +13,7 @@
 
     "paths": {
       "$components": ["src/components"],
+      "$store": ["src/store"],
       "$lib/back": ["../../libs/back"],
       "$lib/app": ["../../libs/app"]
     }
