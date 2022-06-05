@@ -10,14 +10,16 @@
   });
 
   const reset = () => {
-    title = "";
+    name = "";
     slug = "";
     image = "";
   };
 
-  const validate = () => {};
+  const validate = () => {
+    // todo(Leonid): send post request
+  };
 
-  let title = "";
+  let name = "";
   let slug = "";
   let image = "";
 </script>
@@ -25,10 +27,10 @@
 <div class="py-16">
   <div class="grid grid-cols-[repeat(auto-fit,minmax(320px,_1fr))] gap-4 mb-8">
     <AppTextField
-      bind:value={title}
+      bind:value={name}
       counter={25}
       placeholder="Automotive Tools"
-      label="Category title *"
+      label="Category name *"
     />
 
     <AppTextField
