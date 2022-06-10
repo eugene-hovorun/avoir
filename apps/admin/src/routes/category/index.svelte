@@ -8,11 +8,12 @@
     $headerState.pageTitle = "";
   });
 
-  const categories = [];
+  let categories = [];
 
   // todo(Oxygene4): get root path dynamically
-  fetch('http://localhost:3000/api/category').then(res => res.json())
-    .then(res => categories.push(...res));
+  fetch("http://localhost:3000/api/category")
+    .then((res) => res.json())
+    .then((res) => (categories = res));
 </script>
 
 <div class="py-8">
