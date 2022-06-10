@@ -25,3 +25,12 @@
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #277bfa;
 }
+
+input:-webkit-autofill,
+:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+input[data-autocompleted] {
+  background-color: transparent !important;
+}
