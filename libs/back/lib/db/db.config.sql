@@ -16,7 +16,7 @@ CREATE TABLE products
     id    serial PRIMARY KEY unique not null,
     name  varchar(50),
     slug  varchar(50) unique not null,
-    image varchar(150)
+    image varchar
 );
 
 DROP TABLE IF EXISTS categories;
@@ -26,5 +26,5 @@ CREATE TABLE categories
     id    serial PRIMARY KEY unique not null,
     name  varchar(50),
     slug  varchar(50) unique not null,
-    image varchar(150)
+    image varchar
 );
