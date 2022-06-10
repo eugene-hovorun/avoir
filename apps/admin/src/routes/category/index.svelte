@@ -8,19 +8,11 @@
     $headerState.pageTitle = "";
   });
 
-  // todo(Leonid): get categories
-  const categories = [
-    {
-      name: "Automotive Tools",
-      slug: "automotive-tools",
-      image: "https://picsum.photos/100",
-    },
-    {
-      name: "Foo bar",
-      slug: "foo-bar",
-      image: "https://picsum.photos/100",
-    },
-  ];
+  const categories = [];
+
+  // todo(Oxygene4): get root path dynamically
+  fetch('http://localhost:3000/api/category').then(res => res.json())
+    .then(res => categories.push(...res));
 </script>
 
 <div class="py-8">
