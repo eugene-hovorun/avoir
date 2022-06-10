@@ -24,6 +24,7 @@
   };
 
   const goHome = () => goto("/");
+  const logout = () => goto("/auth");
   const addCategory = () => goto("/category/create");
 
   onMount(() => {
@@ -46,14 +47,17 @@
     </span>
 
     <span slot="actions">
-      {#if $headerState.pageTitle === "Categories"}
-        <AppButton
-          label="Add category"
-          icon="plus"
-          type="secondary"
-          on:click={addCategory}
-        />
-      {/if}
+      <div class="flex gap-2">
+        {#if $headerState.pageTitle === "Categories"}
+          <AppButton
+            label="Add category"
+            icon="plus"
+            type="secondary"
+            on:click={addCategory}
+          />
+        {/if}
+        <AppButton label="Log out" type="ghost" on:click={logout} />
+      </div>
     </span>
   </AppBar>
 

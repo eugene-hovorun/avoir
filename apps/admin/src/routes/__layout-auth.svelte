@@ -1,8 +1,12 @@
+<script lang="ts">
+  import "../app.css";
+</script>
+
 <div class="bg-drawer p-4 h-screen flex justify-center items-center">
   <div
     class="flex rounded overflow-hidden sm:bg-white sm:shadow-lg sm:w-96 md:w-[95vmin] h-[58vmin] min-h-[320px]"
   >
-    <div class="max-w-96 mx-auto">
+    <div class="grow max-w-96 mx-auto">
       <slot />
     </div>
 
