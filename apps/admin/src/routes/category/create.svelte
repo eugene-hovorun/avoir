@@ -16,7 +16,18 @@
   };
 
   const validate = () => {
-    // todo(Leonid): send post request
+    // todo(Oxygene4): get root path dynamically
+    fetch(
+            'http://localhost:3000/api/category',
+            {
+              method: 'POST',
+              body: JSON.stringify({
+                name,
+                slug,
+                image
+              })
+            }
+    ).then(res => res.json()).then(res => console.log('new category: ', res?.category));
   };
 
   let name = "";
