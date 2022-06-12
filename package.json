@@ -4,7 +4,9 @@
   "license": "UNLICENSED",
   "scripts": {
     "dev:shop": "cd ./apps/shop && yarn dev",
-    "dev:admin": "cd ./apps/admin && yarn dev"
+    "dev:admin": "cd ./apps/admin && yarn dev",
+    "build:shop": "cd ./apps/shop && yarn build",
+    "build:admin": "cd ./apps/admin && yarn build"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",

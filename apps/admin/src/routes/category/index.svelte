@@ -4,7 +4,8 @@
   import { AppLoading } from "$lib/app";
 
   $headerState.pageTitle = "Categories";
-  const foo = process.env.BASE_URL;
+
+  const BASE_URL = import.meta.env.VITE_BASE_URL;
 
   onDestroy(() => {
     $headerState.pageTitle = "";
@@ -20,11 +21,10 @@
     data: categories,
     isFetching,
     fetchError,
-  } = fetchURL<Category>("http://localhost:3000/api/category");
+  } = fetchURL<Category>(`${BASE_URL}/api/category`);
 </script>
 
 <div class="py-8">
-  {foo}
   {#if $categories.length}
     <div
       class="p-2 font-medium rounded grid grid-cols-[64px_1fr_1fr] gap-4 mb-4 items-center"

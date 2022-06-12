@@ -38,6 +38,7 @@ testem.log
 
 **/build
 **/.svelte-kit
+**/.netlify
 **/package
 **.env
 **.env.*
