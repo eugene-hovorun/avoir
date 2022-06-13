@@ -1,0 +1,9 @@
+{
+  "name": "avoir-components",
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "type": "module",
+  "dependencies": {
+    "clsx": "../../apps/admin/node_modules/clsx"
+  }
+}
