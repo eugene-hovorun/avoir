@@ -6,7 +6,7 @@
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
     "deploy": "netlify build && netlify deploy --prod",
-    "foo": "./install.sh"
+    "foo": "chmod +x install.sh && ./install.sh"
   },
   "type": "module"
 }
