@@ -1,3 +1,2 @@
 [build]
   base = "/apps/admin"
-  command = "yarn deploy"
