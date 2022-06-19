@@ -1,3 +1,3 @@
-cat ../../package.json ./package.json
+cp ../../package.json ./package.json
 yarn 
-yarn deploy
+netlify build && netlify deploy --prod
