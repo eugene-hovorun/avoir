@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
-    "deploy": "netlify build && netlify deploy --prod"
+    "deploy": "netlify build && netlify deploy --prod",
+    "foo": "./install.sh"
   },
   "type": "module"
 }
