@@ -1,6 +1,3 @@
-[Settings]
-  ID = "ed74c31f-c293-40a7-8cb7-0c3ebe89778a"
-
 [build]
   base = "/apps/admin"
   command = "yarn deploy"
